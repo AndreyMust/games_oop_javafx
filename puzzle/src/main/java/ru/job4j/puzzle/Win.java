@@ -23,7 +23,8 @@ public class Win {
         return result;
     }
 
-    public static boolean check(int[][] board) { boolean isWin = true;
+    public static boolean check(int[][] board) {
+        boolean isWin = true;
         for (int i = 0; i < board.length; i++) {
             if (checkHorizontal(board, i) || checkVertical(board, i)) {
                 return true;
